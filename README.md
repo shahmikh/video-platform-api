@@ -1,18 +1,18 @@
-# 🚀 Hybrid-Cloud Video Processing Pipeline & StreamFlix UI
+#  Hybrid-Cloud Video Processing Pipeline & StreamFlix UI
 
-## 📖 Overview
+##  Overview
 
 This project is a **production-grade, event-driven video processing pipeline** that bridges modern cloud-native automation with scalable infrastructure.
 
 It combines:
 
-* ☁️ **AWS Serverless backend** for heavy video processing
-* ⚙️ **Kubernetes cluster (Zero-Trust)** for metadata APIs
-* 🎬 **StreamFlix UI frontend** to visualize and interact with the system
+*  **AWS Serverless backend** for heavy video processing
+*  **Kubernetes cluster (Zero-Trust)** for metadata APIs
+*  **StreamFlix UI frontend** to visualize and interact with the system
 
 ---
 
-## 🏗️ Architecture Diagram
+##  Architecture Diagram
 
 *(This diagram illustrates the automated CI/CD flow, hybrid-cloud deployment strategy, and frontend interaction.)*
 
@@ -48,34 +48,34 @@ graph TD
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
-### ☁️ Cloud Infrastructure
+###  Cloud Infrastructure
 
 * AWS (S3, Lambda, IAM)
 
-### ⚙️ Container Orchestration
+###  Container Orchestration
 
 * Kubernetes (Minikube, Deployments, Services, Secrets)
 
-### 🔁 Automation & CI/CD
+###  Automation & CI/CD
 
 * Terraform (Infrastructure as Code)
 * GitHub Actions
 * Docker Hub
 
-### 🧠 Backend
+###  Backend
 
 * Python (Flask)
 * Docker
 
-### 🎨 Frontend
+###  Frontend
 
 * HTML5
 * CSS3
 * Vanilla JavaScript
 
-### 📊 Observability
+###  Observability
 
 * Prometheus
 * Grafana
@@ -83,20 +83,20 @@ graph TD
 
 ---
 
-## ✨ Key Engineering Features
+##  Key Engineering Features
 
-### 🔐 Zero-Trust Security
+###  Zero-Trust Security
 
 * API endpoints secured via **Kubernetes Secrets**
 * Secrets injected into containers at runtime
 * No credentials stored in codebase
 
-### 🔄 Zero-Downtime Deployments
+###  Zero-Downtime Deployments
 
 * Kubernetes **rolling updates**
 * Automatic rollback behavior if image fails (`ImagePullBackOff` safety)
 
-### 🚀 Fully Automated CI/CD
+###  Fully Automated CI/CD
 
 * Push to `main` branch triggers:
 
@@ -104,21 +104,21 @@ graph TD
   * Secure push to Docker Hub
   * Automatic deployment
 
-### ♻️ Self-Healing Infrastructure
+###  Self-Healing Infrastructure
 
 * Kubernetes **Deployment Controller** ensures:
 
   * Crashed pods are recreated instantly
   * Manual deletions are automatically recovered
 
-### 📈 Full-Stack Observability
+###  Full-Stack Observability
 
 * Flask API exposes metrics via:
 
   * `prometheus-flask-exporter`
 * Metrics visualized in Grafana dashboards
 
-### 🌐 Decoupled Frontend
+###  Decoupled Frontend
 
 * Independent frontend communicates via:
 
@@ -127,7 +127,7 @@ graph TD
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ### 📌 Prerequisites
 
@@ -206,7 +206,7 @@ curl -s \
 
 ---
 
-## 📈 Monitoring & Observability
+##  Monitoring & Observability
 
 ### Access Grafana Dashboard
 
@@ -223,7 +223,7 @@ http://localhost:8080
 
 ---
 
-### 📊 Example PromQL Query
+###  Example PromQL Query
 
 ```promql
 flask_http_request_total
@@ -239,15 +239,15 @@ Use this to monitor:
 
 ## 📌 Future Improvements
 
-* 🔄 Add horizontal pod autoscaling (HPA)
-* 🌍 Deploy to managed Kubernetes (EKS/GKE)
-* 🔐 Implement OAuth2 / JWT authentication
-* 🎥 Extend pipeline for real-time streaming
-* 📦 Add Redis caching layer
+*  Add horizontal pod autoscaling (HPA)
+*  Deploy to managed Kubernetes (EKS/GKE)
+*  Implement OAuth2 / JWT authentication
+*  Extend pipeline for real-time streaming
+*  Add Redis caching layer
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome!
 
@@ -257,6 +257,6 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
