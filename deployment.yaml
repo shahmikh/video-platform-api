@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: video-api
-        image: shahmikh/video-api:latest  # <--- Updated this
+        image: shahmikh1/video-api:latest  # <--- Updated this
         imagePullPolicy: Always                          # <--- Updated this
         ports:
         - containerPort: 5000
