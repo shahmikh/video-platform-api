@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: video-api
-        image: video-api:latest
-        imagePullPolicy: Never
+        image: YOUR_DOCKERHUB_USERNAME/video-api:latest  # <--- Updated this
+        imagePullPolicy: Always                          # <--- Updated this
         ports:
         - containerPort: 5000
 ---
