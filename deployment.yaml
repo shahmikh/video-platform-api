@@ -14,10 +14,16 @@ spec:
     spec:
       containers:
       - name: video-api
-        image: YOUR_DOCKERHUB_USERNAME/video-api:latest  # <--- Updated this
+        image: shahmikh/video-api:latest  # <--- Updated this
         imagePullPolicy: Always                          # <--- Updated this
         ports:
         - containerPort: 5000
+        env:                                 # <-- Add from here
+        - name: API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: video-api-secrets
+              key: API_KEY
 ---
 apiVersion: v1
 kind: Service
